@@ -25,7 +25,7 @@ public:
 
 private:
   void timer_callback();
-  rclcpp::TimerBase::SharedPtr timer_;
-  rclcpp::Publisher<sensor_msgs::msg::Image>::SharedPtr publisher_;
-  size_t count_;
+  rclcpp::TimerBase::SharedPtr m_timer_;
+  rclcpp::Publisher<sensor_msgs::msg::Image>::SharedPtr m_publisher_;
+  size_t m_count_;
 };
